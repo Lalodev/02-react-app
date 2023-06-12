@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Product, ProductInCart } from "../interfaces/interfaces";
 
-import { products } from "../data/products";
-
 export const useShoppingCart = () => {
   const [shoppingCart, setShoppingCart] = useState<{
     [key: string]: ProductInCart;
@@ -32,7 +30,6 @@ export const useShoppingCart = () => {
   };
 
   return {
-    products,
     shoppingCart,
     onProductCountChange,
   };
