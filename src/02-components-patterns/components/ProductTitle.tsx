@@ -13,7 +13,7 @@ export const ProductTitle = ({ title, className, style }: Props) => {
   const { product } = useContext(ProductContext);
 
   return (
-    <span className={`${styles.productDescription} ${className}`}>
+    <span className={`${styles.productDescription} ${className}`} style={style}>
       {title ? title : product.title}
     </span>
   );
